@@ -227,7 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8647bed835b96b4c83fb60b44c5f0bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 
   Images:
   - {fileID: 1115333344}
   - {fileID: 1207618455}
@@ -267,8 +266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -276.61, y: 32.875}
-  m_SizeDelta: {x: -553.23, y: -65.75}
+  m_AnchoredPosition: {x: -632.0699, y: 32.875}
+  m_SizeDelta: {x: -1264.1499, y: -65.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1115333344
 MonoBehaviour:
@@ -318,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.3131855
+  m_AspectRatio: 1.148155
 --- !u!1 &1133947047
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,8 +458,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 273.64, y: 32.8749}
-  m_SizeDelta: {x: -547.27, y: -65.7498}
+  m_AnchoredPosition: {x: 633.93005, y: 32.875}
+  m_SizeDelta: {x: -1267.9, y: -65.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1207618454
 MonoBehaviour:
@@ -475,7 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.3274859
+  m_AspectRatio: 1.1447588
 --- !u!114 &1207618455
 MonoBehaviour:
   m_ObjectHideFlags: 0
