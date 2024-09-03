@@ -34,6 +34,7 @@ public class RandomColorGenerator : MonoBehaviour
 
         // Revert the Image's color back to the original.
         DisplayImage.color = RandomColor;
+        DisplayImage.enabled = false;
     }
 
     // Update is called once per frame
