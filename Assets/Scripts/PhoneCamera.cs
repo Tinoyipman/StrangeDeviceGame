@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PhoneCamera : MonoBehaviour
@@ -10,6 +12,7 @@ public class PhoneCamera : MonoBehaviour
     private WebCamTexture backCamera;
     private List <Texture> placeholders = new();
     private int state = 0;
+    private UnityEngine.SceneManagement.Scene scene;
 
     [SerializeField] private RawImage[] Images;
     [SerializeField] private AspectRatioFitter fit;
@@ -20,6 +23,8 @@ public class PhoneCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
+
         for (int i = 0; i < Images.Length; i++ )
         {
             placeholders.Add(Images[i].texture);
@@ -55,6 +60,8 @@ public class PhoneCamera : MonoBehaviour
         backCamera.Play();
         Images[state].texture = backCamera;
         camAvailable = true;
+
+        Sequence();
 
     }
 
@@ -95,10 +102,12 @@ public class PhoneCamera : MonoBehaviour
             Debug.Log("Photo captured and displayed as background");
 
             state++;
+            Sequence();
 
             if (state > Images.Length)
             {
                 state = 0;
+                Sequence();
                 Images[state].texture = backCamera;
                 backCamera.Play();
             }
@@ -115,7 +124,11 @@ public class PhoneCamera : MonoBehaviour
         else if (state >= Images.Length)
         {
             state = 0;
-            Images[1].texture = placeholders[1];
+            Sequence();
+            for (int i = 0; i < placeholders.Count; i++)
+            {
+                Images[i].texture = placeholders[i];
+            }
             Images[state].texture = backCamera;
             backCamera.Play();
 
@@ -128,5 +141,25 @@ public class PhoneCamera : MonoBehaviour
         {
             Debug.Log("Camera not available");
         }
+    }
+
+    public void Sequence()
+    {
+        Debug.Log("scene is" + scene.name);
+        if (scene.name == "ColorKing")
+        {
+            switch (state)
+            {
+                case 0:
+                    Images[1].enabled = false; break;
+                case 1:
+                    Images[1].enabled = true;
+                    Images[0].enabled = false; break;
+                case 2:
+                    Images[0].enabled = true;
+                    Images[1].enabled = true; break;
+            }
+        }
+        
     }
 }
