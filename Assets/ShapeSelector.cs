@@ -37,6 +37,9 @@ public class ShapeSelector : MonoBehaviour
             int randomIndex = Random.Range(0, imageSprites.Length);
             // Assign the selected sprite to the UI Image.
             displayImage.sprite = imageSprites[randomIndex];
+            Color ImageColor = displayImage.color;
+            ImageColor.a = 0.2f;
+            displayImage.color = ImageColor;
         }
     }
 

@@ -950,7 +950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayImage: {fileID: 1287989924}
-  folderPath: Resources/Shapes
+  folderPath: Shapes
 --- !u!4 &1775638498
 Transform:
   m_ObjectHideFlags: 0
