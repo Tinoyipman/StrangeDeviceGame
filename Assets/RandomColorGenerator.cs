@@ -8,6 +8,7 @@ public class RandomColorGenerator : MonoBehaviour
     public Image DisplayImage;
     public float PopUpTime;
 
+
     private Color RandomColor;
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,7 @@ public class RandomColorGenerator : MonoBehaviour
         yield return new WaitForSeconds(PopUpTime);
 
         // Revert the Image's color back to the original.
-        DisplayImage.color = RandomColor;
+        //DisplayImage.color = RandomColor;
         DisplayImage.enabled = false;
     }
 

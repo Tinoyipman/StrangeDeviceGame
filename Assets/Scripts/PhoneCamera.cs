@@ -1,7 +1,5 @@
-using System.Collections;
+
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,6 +14,11 @@ public class PhoneCamera : MonoBehaviour
 
     [SerializeField] private RawImage[] Images;
     [SerializeField] private AspectRatioFitter fit;
+
+    public Image ColorImage;
+    public GameObject ColorPicker;
+    public float PopUpTime;
+    public Color StartColor;
 
 
 
@@ -44,10 +47,10 @@ public class PhoneCamera : MonoBehaviour
         for (int i = 0; i < devices.Length; i++)
         {
             Debug.Log(devices[i].name);
-            if (/*!devices[i].isFrontFacing*/ devices[i].name == "HD Webcam" )
-            {
-                backCamera = new WebCamTexture(devices[i].name,Screen.width,Screen.height);
-            }
+            //if (!devices[i].isFrontFacing /*devices[i].name == "HD Webcam"*/ )
+            //{
+                backCamera = new WebCamTexture(devices[0].name,Screen.width,Screen.height);
+            //}
 
         }
 
@@ -68,6 +71,7 @@ public class PhoneCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (!camAvailable) {
             return;
         }
@@ -154,12 +158,25 @@ public class PhoneCamera : MonoBehaviour
                     Images[1].enabled = false; break;
                 case 1:
                     Images[1].enabled = true;
-                    Images[0].enabled = false; break;
+                    Images[0].enabled = false;
+                    ColorImage.enabled = true;
+                    StartCoroutine(FlashColor()); break;
+                    
                 case 2:
                     Images[0].enabled = true;
                     Images[1].enabled = true; break;
             }
         }
         
+    }
+
+    private System.Collections.IEnumerator FlashColor()
+    {
+        PopUpTime = ColorPicker.GetComponent<RandomColorGenerator>().PopUpTime;
+        yield return new WaitForSeconds(PopUpTime);
+        Debug.Log(ColorImage.color);
+
+        // Revert the Image's color back to the original.
+        ColorImage.enabled = false;
     }
 }
