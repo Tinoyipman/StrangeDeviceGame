@@ -122,12 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!224 &392158318 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3027883363569629932, guid: b43df079973a9dc4fb190019e94f8606, type: 3}
-  m_PrefabInstance: {fileID: 3027883363349177986}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &621510564
+--- !u!1001 &210127522
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -140,28 +135,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7434484776575476331, guid: 8830ec8bd4adccf4ab8b64535911bef4, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7434484776575476331, guid: 8830ec8bd4adccf4ab8b64535911bef4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7434484776575476331, guid: 8830ec8bd4adccf4ab8b64535911bef4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7434484776575476331, guid: 8830ec8bd4adccf4ab8b64535911bef4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.64
+      value: -12.51
       objectReference: {fileID: 0}
     - target: {fileID: 7434484776575476331, guid: 8830ec8bd4adccf4ab8b64535911bef4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.7
+      value: 12.38
       objectReference: {fileID: 0}
     - target: {fileID: 7434484776575476331, guid: 8830ec8bd4adccf4ab8b64535911bef4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 7434484776575476331, guid: 8830ec8bd4adccf4ab8b64535911bef4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -204,6 +187,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8830ec8bd4adccf4ab8b64535911bef4, type: 3}
+--- !u!224 &392158318 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3027883363569629932, guid: b43df079973a9dc4fb190019e94f8606, type: 3}
+  m_PrefabInstance: {fileID: 3027883363349177986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 985809729860364698, guid: 716c8db0532eec54cb0522c45885148d, type: 3}
       propertyPath: m_text
-      value: Quit Game
+      value: Quit Game?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1254,7 +1242,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 963194228}
-  - {fileID: 621510564}
   - {fileID: 705507995}
   - {fileID: 1251009411}
   - {fileID: 2055324930}
+  - {fileID: 210127522}
