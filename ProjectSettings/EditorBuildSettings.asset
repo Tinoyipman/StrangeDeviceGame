@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MasterScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/SplitImage.unity
     guid: 1f14bc8ded6c5874f947ba66c9a2df54
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ColorKing.unity
     guid: 909681fdec692ff488d1b22e32f2a3ad
+  - enabled: 1
+    path: Assets/Scenes/ImageMaster.unity
+    guid: 0d1473f61943f204db1a6af961c1d55a
   m_configObjects: {}
