@@ -335,8 +335,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
-  m_sharedMaterial: {fileID: 4880471215112511946, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -469,8 +469,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Split Image
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
-  m_sharedMaterial: {fileID: 4880471215112511946, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -828,8 +828,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Split Screen Games
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
-  m_sharedMaterial: {fileID: 4880471215112511946, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -853,7 +853,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 178.35
+  m_fontSize: 149.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1171,7 +1171,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 31
+  m_AdditionalShaderChannelsFlag: 7
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1228,9 +1228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3e014236f6f0a43b90f2f56bde5373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstGame: MasterScene
-  secondGame: CameraMechanic
-  thirdGame: UI
+  firstGame: ColorKing
+  secondGame: SplitImage
+  thirdGame: ImageMaster
 --- !u!1 &5729944189574411888
 GameObject:
   m_ObjectHideFlags: 0
@@ -6160,7 +6160,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d0ed09ccd86fc47448d209b35dc0f4c3, type: 2}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6280,8 +6280,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit Game?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
-  m_sharedMaterial: {fileID: 4880471215112511946, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6414,8 +6414,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Color King
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
-  m_sharedMaterial: {fileID: 4880471215112511946, guid: 7604f991e5b3c114db3e50525e5a4a0a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11279,7 +11279,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85ddbf751c3eb3248804f9c236cf2152, type: 2}
+  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
