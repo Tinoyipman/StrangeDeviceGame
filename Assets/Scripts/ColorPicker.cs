@@ -4,7 +4,6 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
 
 public class ColorPicker : MonoBehaviour
 {
@@ -119,7 +118,6 @@ public class ColorPicker : MonoBehaviour
         List<Color> PreviewColors = new List<Color>();
         List<float> Delta = new List<float>();
         Debug.Log(colorPreview.Length);
-        float ColorDifference;
         for (int i = 0; i < colorPreview.Length; i++)
         {
             //float similarity = ColorUtils.CalculateColorSimilarity(OriginColor, colorPreview[i].color);
