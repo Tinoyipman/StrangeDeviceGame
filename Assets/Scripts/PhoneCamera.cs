@@ -20,6 +20,9 @@ public class PhoneCamera : MonoBehaviour
     public float PopUpTime;
     public Color StartColor;
 
+    public Image DisplayShape;
+    public GameObject ShutterButton;
+
 
 
 
@@ -165,6 +168,14 @@ public class PhoneCamera : MonoBehaviour
                 case 2:
                     Images[0].enabled = true;
                     Images[1].enabled = true; break;
+            }
+        }
+        else if (scene.name == "SplitImage")
+        {
+            if (state == 2)
+            {
+                DisplayShape.enabled = false;
+                ShutterButton.SetActive(false);
             }
         }
         

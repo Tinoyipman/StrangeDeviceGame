@@ -450,6 +450,8 @@ MonoBehaviour:
   ColorPicker: {fileID: 0}
   PopUpTime: 0
   StartColor: {r: 0, g: 0, b: 0, a: 0}
+  DisplayShape: {fileID: 1287989924}
+  ShutterButton: {fileID: 1508627185}
 --- !u!1 &1115333342
 GameObject:
   m_ObjectHideFlags: 0
