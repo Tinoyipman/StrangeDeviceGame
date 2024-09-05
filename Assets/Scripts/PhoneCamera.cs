@@ -22,6 +22,7 @@ public class PhoneCamera : MonoBehaviour
 
     public Image DisplayShape;
     public GameObject ShutterButton;
+    public GameObject CheckButton;
 
 
 
@@ -167,7 +168,10 @@ public class PhoneCamera : MonoBehaviour
                     
                 case 2:
                     Images[0].enabled = true;
-                    Images[1].enabled = true; break;
+                    Images[1].enabled = true;
+                    CheckButton.SetActive(true);
+                    ShutterButton.SetActive(false);
+                    break;
             }
         }
         else if (scene.name == "SplitImage")
